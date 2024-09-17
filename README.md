@@ -20,7 +20,7 @@ There are seven major sections in this document. They are intended to help you n
   - [**Transfer of products to your local workstation**](https://github.com/betacygni/ALMAGAL#transfer-of-products-to-your-local-workstation)
   - [**Directory structure**](https://github.com/betacygni/ALMAGAL#directory-structure)
   - [**Order of execution of the scripts**](https://github.com/betacygni/ALMAGAL#order-of-execution-of-the-scripts)
-  - [**Download and usage**](https://github.com/betacygni/ALMAGAL#download-and-usage)
+  - [**Download and usage of GitHub repository**](https://github.com/betacygni/ALMAGAL#download-and-usage-of-github-repository)
   
 
 ------------------------------------
@@ -284,7 +284,7 @@ Order of execution of the scripts
 
 
 ------------------------------------
-Download and usage
+Download and usage of GitHub repository
 ------------------------------------
 
 You can download and use the here provided scripts following the standard git functions. Major commands are listed here:
