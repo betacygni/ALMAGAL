@@ -306,7 +306,7 @@ You will need to have CASA downloaded on your computer. Two different versions o
 The CASA packages have to be stored in the ```software``` directory that is downloaded from the GitHub page.
 
 <br/>
-Next steps require to un-compress certain files stored in the software directory. Move to that directory and untar the download CASA files, the python.tar and python3.tar files, and the analysisUtils.tar.gz
+Next steps require to un-compress certain files stored in the software directory. Move to that directory and untar the download CASA files, the ```python.tar.gz``` and ```python3.tar.gz``` files, and the ```analysisUtils.tar.gz```
 
 <br/>
 Setup the ```configALMAGAL.py``` file as indicated in different sections above.
