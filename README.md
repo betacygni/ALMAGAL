@@ -163,14 +163,10 @@ Transfer of products to your local workstation
 
 Transfer of the data is done by using the python script **scriptToFetchData.py**
 
-The following information is intended to help you when executing the script to transfer data from the Juelich computer to your local computer. If you encounter problems or strange behaviours, please contact Alvaro Sanchez-Monge at sanchez < at > ph1.uni-koeln.de
+The following information is intended to help you when executing the script to transfer data from the Juelich computer to your local computer. This is only available for the members of the ALMAGAL consortium, and it will be superseeded in the near future when the final storage repository is completely set up. If you encounter problems or strange behaviours, please contact Alvaro Sanchez-Monge at asanchez < at > ice.csic.es
 
   - **Step 0.- Usage of the data**  
-  The data products currently available are not final science-ready products. They are distributed:  
-  (1) to evaluate that the processing worked fine,  
-  (2) to identify possible problems or errors that need to be fixed, and  
-  (3) to initiate and evaluate possible science case studies.  
-  Regarding the scientific usage of the data I refer to the guidelines and information presented by Sergio Molinari during the all-hands meeting on July 20, 2020.
+  The data products currently available are for use by ALMAGAL consortium members. They will be made publicly available once the corresponding papers are finalized and published.
   
   - **Step 1.- Access to Juelich computers**  
   Follow the instructions given in the file **Instructions_to_access_JSC.pdf** which can be found in the directory ```data/documents```  
