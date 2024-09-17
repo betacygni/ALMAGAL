@@ -9,6 +9,8 @@ If you find some of the information contained in this GitHub repository useful i
 
 Sanchez-Monge et al. 2024, submitted to Astronomy & Astrophysics
 
+The paper describes in detail the different steps used for processing the ALMAGAL dataset, including an improved continuum determination strategy, the implemented automatized self-calibration procedures, and the imaging strategy for joint-deconvolved, combined ALMA arrays
+
 <br/>
 <br/>
 
