@@ -293,3 +293,8 @@ You can download and use the here provided scripts following the standard git fu
     ```git init```
   - Download / clone this repository by typing
     ```git clone https://github.com/betacygni/ALMAGAL```
+
+You will need to have CASA downloaded on your computer. This is not provided within the GitHub files because of the size of the CASA file, but it can be accessed in this page:
+
+The CASA package should be stored in the software directory that is downloaded from the GitHub page. Let me know if something is not clear.
+Next step regarding the software, move to the directory software that you have downloaded from the GitHub page and untar the python.tar file.
