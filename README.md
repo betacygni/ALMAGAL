@@ -246,7 +246,7 @@ Order of execution of the scripts
   ```scriptToSplitSources.py```  
   
   Required:
-    - database.xlsx file containing names and MOUS directory tree
+    - database.csv file containing names and MOUS directory tree
     - calibrated MOUS files
 
 - **Step 3** : **Create pipeline products for individual arrays**  
@@ -276,10 +276,31 @@ Order of execution of the scripts
   ```tarPipelineProducts.py```  
   
   Required:
+    - database.csv file containing names and MOUS directory tree
+    - pipeline products created by createIndividual_scriptForImaging.py
+
+- **Step 6** : **Apply self-calibration to each EB**  
+  
+  ```createIndividual_scriptForSelfCalibration.py```  
+  
+  Required:
+    - database.csv file containing names and MOUS directory tree
+    - calibrated split files produced with scriptToSplitSources.py
+    - pipeline-weblog tar file produced with scriptToSplitSources.py and stored with tarPipelineProducts.py
+    - master scripts:  
+          scriptForSelfCalibration.py  
+          run_mainScriptForSelfCalibration  
+          mainScriptForSelfCalibration.sh
+
+- **Step 7** : **Store pipeline products and weblogs**  
+  
+  ```tarPipelineProducts.py```  
+  
+  Required:
     - database.xlsx file containing names and MOUS directory tree
     - pipeline products created by createIndividual_scriptForImaging.py
 
-- **Step 5** : **Create joint-deconvolved image of multiple arrays**  
+- **Step 8** : **Create joint-deconvolved image of multiple arrays**  
   
   ```createIndividual_scriptForJointDeconvolution.py```  
   
@@ -291,6 +312,14 @@ Order of execution of the scripts
           scriptForJointDeconvolution7MTM2.py  
           run_mainScriptForJointDeconvolution7MTM2  
           mainScriptForJointDeconvolution7MTM2.sh
+
+- **Step 9** : **Store pipeline products and weblogs**  
+  
+  ```tarPipelineProducts.py```  
+  
+  Required:
+    - database.xlsx file containing names and MOUS directory tree
+    - pipeline products created by createIndividual_scriptForImaging.py
 
 
 ------------------------------------
