@@ -136,7 +136,7 @@ After the script has finished, you can **repeat to proceed with the following st
 
 **Storage of products for following analysis (e.g., data combination)**
 
-The main script to be executed is tarPipelineProducts.py
+The main script to be executed is ```tarPipelineProducts.py```
 
 This script has to be executed twice for each source. In the first execution, the pipeline products are processed to create (i) FITS files of the continuum and data cubes, which are then compressed in the tar file **pipeline-fits.tar**, (ii) a tar file containing the pipeline weblogs, casalogs and the cont.dat file containing the continuum frequency ranges and named **pipeline-weblogs.tar**, and (iii) a tar file containing all the pipeline processing files named **almagal.tar**
 
