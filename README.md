@@ -303,10 +303,4 @@ You will need to have CASA downloaded on your computer. Two different versions o
   - [CASA 5.6.1](https://casa.nrao.edu/download/distro/casa-pipeline/release/el7/casa-pipeline-release-5.6.1-8.el7.tar.gz)
   - [CASA 6.2.0](https://casa.nrao.edu/download/distro/casa/release/rhel/casa-6.2.0-124.tar.xz)
 
-The CASA packages have to be stored in the ```software``` directory that is downloaded from the GitHub page.
-
-<br/>
-Next steps require to un-compress certain files stored in the software directory. Move to that directory and untar the download CASA files, the ```python.tar.gz``` and ```python3.tar.gz``` files, and the ```analysisUtils.tar.gz```
-
-<br/>
-Setup the ```configALMAGAL.py``` file as indicated in different sections above.
+The CASA packages have to be stored in the ```software``` directory that is downloaded from the GitHub page. Next steps require to un-compress certain files stored in the software directory. Move to that directory and untar the download CASA files, the ```python.tar.gz``` and ```python3.tar.gz``` files, and the ```analysisUtils.tar.gz``` Setup the ```configALMAGAL.py``` file as indicated in different sections above.
