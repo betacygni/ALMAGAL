@@ -289,16 +289,14 @@ Order of execution of the scripts
     - pipeline-weblog tar file produced with scriptToSplitSources.py and stored with tarPipelineProducts.py
     - master scripts:  
           scriptForSelfCalibration.py  
-          run_mainScriptForSelfCalibration  
-          mainScriptForSelfCalibration.sh
 
 - **Step 7** : **Store pipeline products and weblogs**  
   
-  ```tarPipelineProducts.py```  
+  ```tarSelfCalibrationProducts.py```  
   
   Required:
-    - database.xlsx file containing names and MOUS directory tree
-    - pipeline products created by createIndividual_scriptForImaging.py
+    - database.csv file containing names and MOUS directory tree
+    - self-calibration products created by createIndividual_scriptForSelfCalibration.py
 
 - **Step 8** : **Create joint-deconvolved image of multiple arrays**  
   
@@ -306,12 +304,27 @@ Order of execution of the scripts
   
   Required:
     - database.xlsx file containing names and MOUS directory tree
-    - calibrated split files produced with scriptToSplitSources.py
-    - pipeline-weblog tar file produced with scriptToSplitSources.py and stored with tarPipelineProducts.py
+    - calibrated split files produced after evaluting self-calibration
+    - pipeline-weblog tar files stored with tarPipelineProducts.py
     - master scripts:  
+          scriptForJointDeconvolution7M.py  
+          run_mainScriptForJointDeconvolution7M  
+          mainScriptForJointDeconvolution7M.sh
+          scriptForJointDeconvolutionTM2.py  
+          run_mainScriptForJointDeconvolutionTM2  
+          mainScriptForJointDeconvolutionTM2.sh
+          scriptForJointDeconvolutionTM1.py  
+          run_mainScriptForJointDeconvolutionTM1  
+          mainScriptForJointDeconvolutionTM1.sh
           scriptForJointDeconvolution7MTM2.py  
           run_mainScriptForJointDeconvolution7MTM2  
           mainScriptForJointDeconvolution7MTM2.sh
+          scriptForJointDeconvolutionTM2TM1.py  
+          run_mainScriptForJointDeconvolutionTM2TM1  
+          mainScriptForJointDeconvolutionTM2TM1.sh
+          scriptForJointDeconvolution7MTM2TM1.py  
+          run_mainScriptForJointDeconvolution7MTM2TM1  
+          mainScriptForJointDeconvolution7MTM2TM1.sh
 
 - **Step 9** : **Store pipeline products and weblogs**  
   
