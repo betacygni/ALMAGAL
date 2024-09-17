@@ -298,12 +298,15 @@ You can download and use the here provided scripts following the standard git fu
   - Download / clone this repository by typing
     ```git clone https://github.com/betacygni/ALMAGAL```
 
+<br/>
 You will need to have CASA downloaded on your computer. Two different versions of CASA were used for different steps in the ALMAGAL processing workflow (see above). The two versions of CASA are not provided within the GitHub downloadable files because of the size of the CASA files, but they can be accessed in these weblinks:
   - [CASA 5.6.1](https://casa.nrao.edu/download/distro/casa-pipeline/release/el7/casa-pipeline-release-5.6.1-8.el7.tar.gz)
   - [CASA 6.2.0](https://casa.nrao.edu/download/distro/casa/release/rhel/casa-6.2.0-124.tar.xz)
 
+The CASA packages have to be stored in the ```software``` directory that is downloaded from the GitHub page.
 
-The CASA package should be stored in the software directory that is downloaded from the GitHub page. Let me know if something is not clear.
-Next step regarding the software, move to the directory software that you have downloaded from the GitHub page and untar the python.tar file.
+<br/>
+Next steps require to un-compress certain files stored in the software directory. Move to that directory and untar the download CASA files, the python.tar and python3.tar files, and the analysisUtils.tar.gz
 
-Setup configALMAGAL.py file
+<br/>
+Setup ```configALMAGAL.py``` file as indicated in different sections above.
