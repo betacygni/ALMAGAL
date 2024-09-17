@@ -234,7 +234,7 @@ Order of execution of the scripts
 ------------------------------------
 
 - **Step 0** : **Download calibrated data from ALMA science archive**  
-  Store data in ```$SCRATCH``` and ```$LARGEDATA``` (in Juelich Supercomputer Center, JSC)  
+  Store data in ```$SCRATCH``` and ```$DATA1``` (in Juelich Supercomputer Center, JSC; DATA1 corresponds to the old LARGEDATA)  
   Untar the copy stored in ```$SCRATCH```
 
 - **Step 1** : **Set up the configuration file**  
