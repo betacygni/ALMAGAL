@@ -257,19 +257,19 @@ Order of execution of the scripts
     - database.xlsx file containing names and MOUS directory tree  
     - calibrated split files produced with scriptToSplitSources.py  
     - master scripts:  
-          REFIND.py
-          scriptForImaging7M.py
-          run_mainScriptForImaging7M
-          mainScriptForImaging7M.sh
-          scriptForImagingTM2.py
-          run_mainScriptForImagingTM2
-          mainScriptForImagingTM2.sh
-          scriptForImagingTM1.py
-          run_mainScriptForImagingTM1
-          mainScriptForImagingTM1.sh
-          scriptForImagingTM1_serial.py
-          run_mainScriptForImagingTM1_serial
-          mainScriptForImagingTM1_serial.sh
+          REFIND.py 
+          scriptForImaging7M.py 
+          run_mainScriptForImaging7M 
+          mainScriptForImaging7M.sh 
+          scriptForImagingTM2.py 
+          run_mainScriptForImagingTM2 
+          mainScriptForImagingTM2.sh 
+          scriptForImagingTM1.py 
+          run_mainScriptForImagingTM1 
+          mainScriptForImagingTM1.sh 
+          scriptForImagingTM1_serial.py 
+          run_mainScriptForImagingTM1_serial 
+          mainScriptForImagingTM1_serial.sh 
 
 - **Step 4** : **Store pipeline products and weblogs**  
   
