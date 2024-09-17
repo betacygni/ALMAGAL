@@ -7,8 +7,9 @@ ALMAGAL is a ALMA Cycle 7 Large Program that observes 1017 high-mass star-formin
 
 If you find some of the information contained in this GitHub repository useful in your work, please cite this publication:
 
-Sanchez-Monge et al. 2024, submitted
+Sanchez-Monge et al. 2024, submitted to Astronomy & Astrophysics
 
+<br/>
 <br/>
 
 There are seven major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
