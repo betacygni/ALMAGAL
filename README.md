@@ -1,11 +1,12 @@
 ALMAGAL - Processing scripts and instructions for the ALMAGAL project
 -----------------------------------------------------------------------------------
 
-This README file contains a brief description of the procedures and scripts that are used to process the ALMAGAL data. If you encounter problems or find out that some files may be missing, contact Alvaro Sanchez-Monge at sanchez < at > ph1.uni-koeln.de
+This README file contains a brief description of the procedures and scripts that are used to process the ALMAGAL data. If you encounter problems or find out that some files may be missing, contact Alvaro Sanchez-Monge at asanchez < at > ice.csic.es
 
 There are seven major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
   - [**Data calibration and preparation**](https://github.com/betacygni/ALMAGAL#data-calibration-and-preparation)
   - [**Pipeline imaging and continuum determination**](https://github.com/betacygni/ALMAGAL#pipeline-imaging-and-continuum-determination)
+  - [**Self-calibration**](https://github.com/betacygni/ALMAGAL#self-calibration)
   - [**Data combination**](https://github.com/betacygni/ALMAGAL#data-combination)
   - [**Transfer of products to your local workstation**](https://github.com/betacygni/ALMAGAL#transfer-of-products-to-your-local-workstation)
   - [**Directory structure**](https://github.com/betacygni/ALMAGAL#directory-structure)
@@ -125,6 +126,13 @@ The main script to be executed is tarPipelineProducts.py
 This script has to be executed twice for each source. In the first execution, the pipeline products are processed to create (i) FITS files of the continuum and data cubes, which are then compressed in the tar file **pipeline-fits.tar**, (ii) a tar file containing the pipeline weblogs, casalogs and the cont.dat file containing the continuum frequency ranges and named **pipeline-weblogs.tar**, and (iii) a tar file containing all the pipeline processing files named **almagal.tar**
 
 In the second execution, if a cold-storage space exists, the newly produced tar files will be transferred to that location.
+
+
+------------------------------------
+Self-calibration
+------------------------------------
+
+In progress
 
 
 ------------------------------------
