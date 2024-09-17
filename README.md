@@ -84,7 +84,7 @@ There are three major steps to be executed to achive the above mentioned goals:
   - Execution of (pipeline and additional) imaging procedures
   - Storage of products for following analysis (e.g., data combination)
 
-
+<\br>
 **Setting up the configALMAGAL.py file**
 
 This config file is intended to include and store relevant information for the execution of the scripts. Information that can not be hardcoded in the scripts, because it is expected to change from workstation to workstation. Currently, there are two major sets of variables to be defined. The first block is necessary for transfering data from Juelich to your local workstation (see below), while the second block is necessary for the execution of the processing scripts.
@@ -96,7 +96,7 @@ For the current purpose, edit the following information:
   - ```my_softwarePath``` : path where software is stored
   - ```my_storagePath``` : path where you plan to compress and store the products. It can be set to be the same as my_mainPath in case you do not have access to a cold-storage location
 
-
+<\br>
 **Execution of (pipeline and additional) imaging procedures**
 
 The main script to be executed is **createIndividual_scriptForImaging.py**, which requires a series of additional scripts (see  [Order of execution of the scripts]((https://github.com/betacygni/ALMAGAL#order-of-execution-of-the-scripts)) below). You can explore the main commands using
@@ -130,7 +130,7 @@ To proceed with the imaging of the selected source / array, you just need to exe
 
 After the script has finished, you can **repeat to proceed with the following steps**. Currently, there are 6 different processing steps when processing 7M data, and 15 steps for the TM2 data. Once all the steps are executed, you can proceed to the last step.
 
-
+<\br>
 **Storage of products for following analysis (e.g., data combination)**
 
 The main script to be executed is tarPipelineProducts.py
