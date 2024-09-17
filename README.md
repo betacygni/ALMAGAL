@@ -9,7 +9,7 @@ If you find some of the information contained in this GitHub repository useful i
 
 Sanchez-Monge et al. 2024, submitted
 
-
+<br/>
 
 There are seven major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
   - [**Data calibration and preparation**](https://github.com/betacygni/ALMAGAL#data-calibration-and-preparation)
