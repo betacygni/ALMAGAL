@@ -290,7 +290,7 @@ Order of execution of the scripts
     - master scripts:  
           scriptForSelfCalibration.py  
 
-- **Step 7** : **Store pipeline products and weblogs**  
+- **Step 7** : **Store self-calibration products**  
   
   ```tarSelfCalibrationProducts.py```  
   
@@ -326,9 +326,9 @@ Order of execution of the scripts
           run_mainScriptForJointDeconvolution7MTM2TM1  
           mainScriptForJointDeconvolution7MTM2TM1.sh
 
-- **Step 9** : **Store pipeline products and weblogs**  
+- **Step 9** : **Store joint-deconvolution products**  
   
-  ```tarPipelineProducts.py```  
+  ```tarJointDeconvolutionProducts.py```  
   
   Required:
     - database.xlsx file containing names and MOUS directory tree
