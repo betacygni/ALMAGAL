@@ -3,6 +3,11 @@ ALMAGAL - Processing scripts and instructions for the ALMAGAL project
 
 This README file contains a brief description of the procedures and scripts that are used to process the ALMAGAL data. If you encounter problems or find out that some files may be missing, contact Alvaro Sanchez-Monge at asanchez < at > ice.csic.es
 
+ALMAGAL is a ALMA Cycle 7 Large Program that observes 1017 high-mass star-forming regions distributed throughout the Milky Way. See more details at: [ALMAGAL website](http://www.almagal.org/)
+
+If you find some of the information contained in this GitHub repository useful in your work, please cite this publication:
+Sanchez-Monge et al. 2024, submitted
+
 There are seven major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
   - [**Data calibration and preparation**](https://github.com/betacygni/ALMAGAL#data-calibration-and-preparation)
   - [**Pipeline imaging and continuum determination**](https://github.com/betacygni/ALMAGAL#pipeline-imaging-and-continuum-determination)
