@@ -298,3 +298,5 @@ You will need to have CASA downloaded on your computer. This is not provided wit
 
 The CASA package should be stored in the software directory that is downloaded from the GitHub page. Let me know if something is not clear.
 Next step regarding the software, move to the directory software that you have downloaded from the GitHub page and untar the python.tar file.
+
+Setup configALMAGAL.py file
