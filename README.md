@@ -14,7 +14,7 @@ The paper describes in detail the different steps used for processing the ALMAGA
 <br/>
 <br/>
 
-There are seven major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
+There are eight major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
   - [**Data calibration and preparation**](https://github.com/betacygni/ALMAGAL#data-calibration-and-preparation)
   - [**Pipeline imaging and continuum determination**](https://github.com/betacygni/ALMAGAL#pipeline-imaging-and-continuum-determination)
   - [**Self-calibration**](https://github.com/betacygni/ALMAGAL#self-calibration)
