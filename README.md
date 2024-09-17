@@ -114,11 +114,14 @@ Prepare imaging scripts for source ID 600 and for the array TM2
 Prepare imaging scripts for sources in the ID range 0 to 10 and for the array T7M  
 ```python createIndividual_scriptForImaging.py --array 7M --idrange 0 10```
 
-The product of this script is a series of files tuned in to process one of the steps for the selected source and array. For example, in the first example, the products are the following scripts:  
+The product of this script is a series of files tuned in to process one of the steps for the selected source and array. For example, in the first example, the products are the following scripts: 
+
 ```mainScriptForImaging7M_0_7M.sh```  
 ```run_mainScriptForImaging7M_0_7M```  
 ```scriptForImaging7M_0_7M.py```  
+
 In addition to these scripts, you will have an additional bash script:
+
 ```my_executeImaging.sh``` (or alternatively ```my_executeImagingStep0.sh``` necessary in JSC)
 
 To proceed with the imaging of the selected source / array, you just need to execute the last indicated bash script:
