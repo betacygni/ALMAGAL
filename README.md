@@ -151,13 +151,11 @@ Self-calibration
 
 The main goal of the scripts presented in this section is to perform an automatic self-calibration on each source (for each individual array). For this, we follow the standard interferometric guidelines that suggest that for phase-only self-calibration we need to detect the target with a signal-to-noise ratio (SNR) > 3 in a solution time shorter than time for significant phase variations for all baselines to a single antenna. Based on this, the SNR necessary to do self-calibration is defined as:
 
-$$SNR_\mathrm{selfcal} = \frac{I_\mathrm{peak,cont}}{\mathrm{rms}_\mathrm{cont} \times \sqrt{N _\mathrm{ant}-3} \times \sqrt{t _\mathrm{exp} / t _\mathrm{int}}}$$
+$$SNR_\mathrm{selfcal} = \frac{I_\mathrm{peak,cont}}{\mathrm{rms} _\mathrm{cont} \times \sqrt{N _\mathrm{ant}-3} \times \sqrt{t _\mathrm{exp} / t _\mathrm{int}}}$$
 
 
 
-where $I_\mathrm{peak,cont}$ is the peak intensity of the continuum emission, $\mathrm{rms}_\mathrm{cont}$ is the rms noise level of the continuum iamge, $N_\mathrm{ant}$ is the number of antennas available during the observation, $t_\mathrm{exp}$ is the total on-source observing time, and $t_\mathrm{int}$ is the solution time interval, that we equal to the integration time of the observations.
-
-each source (for each individual array) through a series of pipeline and additional CASA tasks in order to produce: (1) images of the continuum and data cubes for each source and array individually, (2) production of a ```cont.dat``` file containing the frequency ranges that can be used for continuum determination, (3) a series of pipeline weblogs and casalogs that contain information that will be used when combining different arrays.
+where $I_\mathrm{peak,cont}$ is the peak intensity of the continuum emission, $\mathrm{rms}_ \mathrm{cont}$ is the rms noise level of the continuum iamge, $N _\mathrm{ant}$ is the number of antennas available during the observation, $t _\mathrm{exp}$ is the total on-source observing time, and $t _\mathrm{int}$ is the solution time interval, that we equal to the integration time of the observations.
 
 There are three major steps to be executed to achive the above mentioned goals:
   - Setting up the configALMAGAL.py file
@@ -167,38 +165,35 @@ There are three major steps to be executed to achive the above mentioned goals:
 <br/>
 
 
-**Execution of (pipeline and additional) imaging procedures**
+**Execution of self-calibration procedures**
 
-The main script to be executed is **createIndividual_scriptForImaging.py**, which requires a series of additional scripts (see  [Order of execution of the scripts]((https://github.com/betacygni/ALMAGAL#order-of-execution-of-the-scripts)) below). You can explore the main commands using
+The main script to be executed is **createIndividual_scriptForSelfCalibration.py**, which requires a series of additional scripts (see  [Order of execution of the scripts]((https://github.com/betacygni/ALMAGAL#order-of-execution-of-the-scripts)) below). You can explore the main commands using
 
-```python createIndividual_scriptForImaging.py --help```
+```python createIndividual_scriptForSelfCalibration.py --help```
 
-There are two main parameters that have to be set up when executing the script: (1) array to be processed (i.e., 7M, TM2, TM1), and (2) the identifiers (ID) of the sources to be processed. Remember, this identifiers are determined on the basis of the database excel files discussed above (i.e., database.xslx). Some examples are:
+There are two main parameters that have to be set up when executing the script: (1) the identifiers (ID) of the sources to be processed. Remember, this identifiers are determined on the basis of the database excel files discussed above (i.e., database.xslx). Some examples are:
 
-Prepare imaging scripts for source ID 0 and for the array 7M  
-```python createIndividual_scriptForImaging.py --array 7M --id 0```
+Prepare self-calibration scripts for source ID 0 
+```python createIndividual_scriptForSelfCalibration.py --id 0```
 
-Prepare imaging scripts for source ID 600 and for the array TM2  
-```python createIndividual_scriptForImaging.py --array TM2 --id 600```
-
-Prepare imaging scripts for sources in the ID range 0 to 10 and for the array T7M  
-```python createIndividual_scriptForImaging.py --array 7M --idrange 0 10```
+Prepare self-calibration scripts for sources in the ID range 0 to 10
+```python createIndividual_scriptForSelfCalibration.py --idrange 0 10```
 
 The product of this script is a series of files tuned in to process one of the steps for the selected source and array. For example, in the first example, the products are the following scripts: 
 
-```mainScriptForImaging7M_0_7M.sh```  
-```run_mainScriptForImaging7M_0_7M```  
-```scriptForImaging7M_0_7M.py```  
+```mainScriptForSelfCalibration_0.sh```  
+```run_mainScriptForSelfCalibration_0```  
+```scriptForSelfCalibration_0.py```  
 
 In addition to these scripts, you will have an additional bash script:
 
-```my_executeImaging.sh``` (or alternatively ```my_executeImagingStep0.sh``` necessary in JSC)
+```my_executeSelfCalibration.sh```
 
-To proceed with the imaging of the selected source / array, you just need to execute the last indicated bash script:
+To proceed with the imaging of the selected source, you just need to execute the last indicated bash script:
 
-```./my_executeImaging.sh```
+```./my_executeSelfCalibration.sh```
 
-After the script has finished, you can **repeat to proceed with the following steps**. Currently, there are 6 different processing steps when processing 7M data, and 15 steps for the TM2 data. Once all the steps are executed, you can proceed to the last step.
+This will execute the self-calibration for the three arrays individually (i.e., 7M, TM2 and TM1).
 
 <br/>
 
