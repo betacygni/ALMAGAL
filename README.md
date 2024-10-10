@@ -430,8 +430,7 @@ Order of execution of the scripts
 Information on science data products
 ------------------------------------
 
-The ALMAGAL GitHub project is structured to enable an easy storage of the data and an effective processing of the data, considering that new data are expected to arrive in the forthcoming months, and that new re-executions of scripts may be necessary. Also, the major structure of the files has been determined in part based on the execution and storage capabilities existing at the Juelich Supercomputer Center, where most of the processing of the data is performed.
-
+The final FITS files of both continuum and cubes will be distributed by the ALMAGAL consortium in the near future. Here we provide some tables with information on the generated products. For example, properties of the produced images (both individual array and combined arrays), information on the self-calibration conditions and properties for the different sources and arrays, and additional potentially useful files. All this information is stored in a series of ```csv``` table files that are available within the ```data/database/products``` directory
 
 ------------------------------------
 Download and usage of GitHub repository
