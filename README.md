@@ -435,7 +435,53 @@ The final FITS files of both continuum and cubes will be distributed by the ALMA
 
 **Basic information on the produced images**
 
-The main script to be executed is ```tarJointDeconvolutionProducts.py```
+These files contain information of the produced images (both continuum and cube FITS files). This information consists on header parameters, rms noise levels, peak intensities among others. In the following we list the name of the files and the labels of the header row, which can be used to identify the content included in each file:
+
+- ```7M_almagal_imageParameters.csv```
+  - < empty > corresponding to the source ID
+  - Source
+  - OBSRA
+  - OBSDEC
+  - 7M_contNAXIS
+  - 7M_contCDELT
+  - 7M_contPEAK
+  - 7M_contAGMADRES
+  - 7M_contAGSTDRES
+  - 7M_contAGMADREM
+  - 7M_contAGSTDREM
+  - 7M_contAGMADIMM
+  - 7M_contAGSTDIMM
+  - 7M_contBMAJ
+  - 7M_contBMIN
+  - 7M_contBPA
+  - 7M_spw0PEAK
+  - 7M_spw0AGMADRESch0200
+  - 7M_spw0AGSTDRESch0200
+  - 7M_spw0AGMADRESch1000
+  - 7M_spw0AGSTDRESch1000
+  - 7M_spw0AGMADRESch2000
+  - 7M_spw0AGSTDRESch2000
+  - 7M_spw0AGMADRESch2800
+  - 7M_spw0AGSTDRESch2800
+  - 7M_spw0BMAJ
+  - 7M_spw0BMIN
+  - 7M_spw0BPA
+  - ... and it repeats for spectral windows ```spw1```, ```spw2``` and ```spw3```
+  
+- ```TM2_almagal_imageParameters.csv```
+  - the same as for 7M but for TM2
+
+- ```TM1_almagal_imageParameters.csv```
+  - The same as for 7M but for TM1
+ 
+- ```7MTM2_almagal_imageParameters.csv```
+  - the same as for 7M but for 7MTM2
+
+- ```7MTM2TM1_almagal_imageParameters.csv```
+  - The same as for 7M but for 7MTM2TM1
+
+After the source ID and the name of the source, the two next column contain the right ascension and declination coordinates of the phase center of the FITS files. The next two columns include the number of pixels (which is the same for ```cont``` and the four ```spw``` images) and the pixel size. Following that, we list the peak intensity (```PEAK```), the noise determined with six slightly different methods (see PUBLICATION), and the beam information (```BMAJ```, ```BMIN``` and ```BPA```). After the continuum, we provide information for the cubes, from ```spw0``` to ```spw3```, which consist of the peak intensity, the noise determined in four different channels using two different methods, and the beam information.
+
 
 **Information on the self-calibration products**
 
