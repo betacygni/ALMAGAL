@@ -442,10 +442,11 @@ The main script to be executed is ```tarJointDeconvolutionProducts.py```
 
 **Information on the fraction of bandwidth used for continuum determination**
 
-The file ```almagal_continuumRanges.csv``` contains a series of columns that lists the fraction of bandwidth used for the continuum determination for each source, individual array and spectral window. The header of the file contains the following information:
-- Source
-- calibrated split files produced with scriptToSplitSources.py
-- master scripts:  
+The file ```almagal_continuumRanges.csv``` contains a series of columns that lists the fraction of bandwidth used for the continuum determination for each source, individual array and spectral window. In the following we list the name of the files and the header information that can be used to identify the content included in each file:
+
+- ```almagal_continuumRanges.csv```
+  - calibrated split files produced with scriptToSplitSources.py
+  - master scripts:  
   
 
 
