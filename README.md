@@ -153,17 +153,13 @@ The main goal of the scripts presented in this section is to perform an automati
 
 $$SNR_\mathrm{selfcal} = \frac{I_\mathrm{peak,cont}}{\mathrm{rms} _\mathrm{cont} \times \sqrt{N _\mathrm{ant}-3} \times \sqrt{t _\mathrm{exp} / t _\mathrm{int}}}$$
 
-
-
 where $I_\mathrm{peak,cont}$ is the peak intensity of the continuum emission, $\mathrm{rms}_ \mathrm{cont}$ is the rms noise level of the continuum iamge, $N _\mathrm{ant}$ is the number of antennas available during the observation, $t _\mathrm{exp}$ is the total on-source observing time, and $t _\mathrm{int}$ is the solution time interval, that we equal to the integration time of the observations.
 
-There are three major steps to be executed to achive the above mentioned goals:
-  - Setting up the configALMAGAL.py file
-  - Execution of (pipeline and additional) imaging procedures
-  - Storage of products for following analysis (e.g., data combination)
+There are two major steps to be executed to achive the above mentioned goals:
+  - Execution of self-calibration procedures
+  - Storage of products (i.e., self-calibrated visibilities) for following analysis (e.g., data combination)
 
 <br/>
-
 
 **Execution of self-calibration procedures**
 
@@ -171,7 +167,7 @@ The main script to be executed is **createIndividual_scriptForSelfCalibration.py
 
 ```python createIndividual_scriptForSelfCalibration.py --help```
 
-There are two main parameters that have to be set up when executing the script: (1) the identifiers (ID) of the sources to be processed. Remember, this identifiers are determined on the basis of the database excel files discussed above (i.e., database.xslx). Some examples are:
+There is one parameter that have to be set up when executing the script: (1) the identifiers (ID) of the sources to be processed. Remember, these identifiers are determined on the basis of the database excel files discussed above (i.e., database.xslx). Some examples are:
 
 Prepare self-calibration scripts for source ID 0 
 ```python createIndividual_scriptForSelfCalibration.py --id 0```
@@ -207,7 +203,50 @@ The main script to be executed is ```tarSelfCalibrationProducts.py```
 Data combination
 ------------------------------------
 
-In progress
+Following self-calibration, the next major goal is to produce combined images (i.e., images in which the data from different array configurations are used together). For this, we follow a CLEANing strategy in which the mask grows gradually to avoid divergence and to ensure recovery and CLEANing of the extended (fainter) emission. Details on the procedure are described in the published paper (see above). The following scripts can be used to image both combined arrays as well as individual arrays.
+
+There are two major steps to be executed to achive the above mentioned goals:
+  - Execution of joint-deconvolved imaging procedures
+  - Storage of final products
+
+<br/>
+
+**Execution of joint-deconvolved imaging procedures**
+
+The main script to be executed is **createIndividual_scriptForJointDeconvolution.py**, which requires a series of additional scripts (see  [Order of execution of the scripts]((https://github.com/betacygni/ALMAGAL#order-of-execution-of-the-scripts)) below). You can explore the main commands using
+
+```python createIndividual_scriptForJointDeconvolution.py --help```
+
+There are two main parameters that have to be set up when executing the script: (1) array or combination of arrays to be processed (i.e., 7M, TM2, TM1, 7MTM2, 7MTM2TM1), and (2) the identifiers (ID) of the sources to be processed. Remember, these identifiers are determined on the basis of the database excel files discussed above (i.e., database.xslx). Some examples are:
+
+Prepare joint-deconvolution imaging scripts for source ID 0 and all three arrays combined
+```python createIndividual_scriptForSelfCalibration.py --array 7MTM2TM1 --id 0```
+
+Prepare joint-deconvolution imaging scripts for sources in the ID range 0 to 10 and two arrays (7M and TM2) combined
+```python createIndividual_scriptForSelfCalibration.py --array 7MTM2 --idrange 0 10```
+
+The product of this script is a series of files tuned in to process one of the steps for the selected source and array. For example, in the first example, the products are the following scripts: 
+
+```mainScriptForSelfCalibration7MTM2TM1_0_7MTM2TM1.sh```  
+```run_mainScriptForSelfCalibration7MTM2TM1_0_7MTM2TM1```  
+```scriptForSelfCalibration7MTM2TM1_0_7MTM2TM1.py```  
+
+In addition to these scripts, you will have an additional bash script:
+
+```my_executeJointDeconvolution.sh```
+
+To proceed with the imaging of the selected source, you just need to execute the last indicated bash script:
+
+```./my_executeJointDeconvolution.sh```
+
+This will execute the joint-deconvolution imaging for the array (or combination or arrays) and source selected..
+
+<br/>
+
+**Storage of final products**
+
+The main script to be executed is ```tarJointDeconvolutionProducts.py```
+
 
 
 ------------------------------------
