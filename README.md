@@ -480,7 +480,7 @@ These files contain information of the produced images (both continuum and cube 
 - ```7MTM2TM1_almagal_imageParameters.csv```
   - The same as for 7M but for 7MTM2TM1
 
-After the source ID and the name of the source, the two next column contain the right ascension and declination coordinates of the phase center of the FITS files. The next two columns include the number of pixels (which is the same for ```cont``` and the four ```spw``` images) and the pixel size. Following that, we list the peak intensity (```PEAK```), the noise determined with six slightly different methods (see PUBLICATION), and the beam information (```BMAJ```, ```BMIN``` and ```BPA```). After the continuum, we provide information for the cubes, from ```spw0``` to ```spw3```, which consist of the peak intensity, the noise determined in four different channels using two different methods, and the beam information.
+After the source ID and the name of the source, the two next column contain the right ascension and declination coordinates of the phase center of the FITS files. The next two columns include the number of pixels (which is the same for ```cont``` and the four ```spw``` images) and the pixel size. Following that, we list the peak intensity (```PEAK```), the noise determined with six slightly different methods (see [here](https://github.com/betacygni/ALMAGAL#citation-and-publication)), and the beam information (```BMAJ```, ```BMIN``` and ```BPA```). After the continuum, we provide information for the cubes, from ```spw0``` to ```spw3```, which consist of the peak intensity, the noise determined in four different channels using two different methods, and the beam information.
 
 
 **Information on the self-calibration products**
