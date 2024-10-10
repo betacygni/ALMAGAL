@@ -14,7 +14,7 @@ The paper describes in detail the different steps used for processing the ALMAGA
 <br/>
 <br/>
 
-There are nine major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
+There are ten major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
   - [**Data calibration and preparation**](https://github.com/betacygni/ALMAGAL#data-calibration-and-preparation)
   - [**Pipeline imaging and continuum determination**](https://github.com/betacygni/ALMAGAL#pipeline-imaging-and-continuum-determination)
   - [**Self-calibration**](https://github.com/betacygni/ALMAGAL#self-calibration)
@@ -24,6 +24,7 @@ There are nine major sections in this document. They are intended to help you na
   - [**Order of execution of the scripts**](https://github.com/betacygni/ALMAGAL#order-of-execution-of-the-scripts)
   - [**Information on science data products**](https://github.com/betacygni/ALMAGAL#information-on-science-data-products)
   - [**Download and usage of GitHub repository**](https://github.com/betacygni/ALMAGAL#download-and-usage-of-github-repository)
+  - [**Citation and publication**](https://github.com/betacygni/ALMAGAL#citation-and-publication)
   
 
 ------------------------------------
@@ -475,7 +476,7 @@ These files contain information about the rms noise, intensity peak, beam size o
 - ```TM1_almagal_selfcalibrationParameters.csv```
   - The same as for 7M but for TM1
 
-The columns depict different iterations, with ```i0``` corresponding to no self-calibration attempted, and ```i1``` to ```i4``` the different steps (see publication listed in REFERENCE). The label ```n``` and ```y``` indicates if self-calibration solutions are not or yes applied (this helps to compare e.g., how the noise improves after self-calibration). The main parameters are information on the beam size (```BMAJ```, ```BMIN``` and ```BPA```), information on the peak intensity (```PEAK```), information on the noise measured in two different ways (```RMSSTD``` and ```RMSMAD```), and information on the signal-to-noise ratio (```SNRSTD``` and ```STDMAD```).
+The columns depict different iterations, with ```i0``` corresponding to no self-calibration attempted, and ```i1``` to ```i4``` the different steps (see publication listed [here](https://github.com/betacygni/ALMAGAL#citation-and-publication).). The label ```n``` and ```y``` indicates if self-calibration solutions are not or yes applied (this helps to compare e.g., how the noise improves after self-calibration). The main parameters are information on the beam size (```BMAJ```, ```BMIN``` and ```BPA```), information on the peak intensity (```PEAK```), information on the noise measured in two different ways (```RMSSTD``` and ```RMSMAD```), and information on the signal-to-noise ratio (```SNRSTD``` and ```STDMAD```).
 
 **Information on the fraction of bandwidth used for continuum determination**
 
@@ -497,8 +498,6 @@ These files contain information on the fraction of bandwidth used for the contin
   - contrange_spw2_TM1
   - contrange_spw3_TM1
 
-
-
 ------------------------------------
 Download and usage of GitHub repository
 ------------------------------------
@@ -519,3 +518,13 @@ You will need to have CASA downloaded on your computer. Two different versions o
 The CASA packages have to be stored in the ```software``` directory that is downloaded from the GitHub page. Next steps require to un-compress certain files stored in the software directory. Move to that directory and untar the download CASA files, the ```python.tar.gz``` and ```python3.tar.gz``` files, and the ```analysisUtils.tar.gz```
 
 Finally, setup the ```configALMAGAL.py``` file as indicated in different sections above.
+
+------------------------------------
+Citation and publication
+------------------------------------
+
+If you find some of the information contained in this GitHub repository useful in your work, please cite this publication:
+
+**Sanchez-Monge et al. 2024, submitted to Astronomy & Astrophysics**
+
+The paper describes in detail the different steps used for processing the ALMAGAL dataset, including an improved continuum determination strategy, the implemented automatized self-calibration procedures, and the imaging strategy for joint-deconvolved, combined ALMA arrays
