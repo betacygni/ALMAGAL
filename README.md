@@ -309,7 +309,8 @@ The ALMAGAL directory is divided in two major directories **data** and **softwar
 | `data` | Contains the data and scripts |
 | `data/2019.1.00195.L` | **Main directory** with calibrated and imaged products. This is not existing in the GitHub due to is large size |
 | `data/cleanUp` | Contains a basic bash script to clean-up the mpi-runs directory, which tends to be populated by scripts during the processing of the data |
-| `data/database` | Contains two excel files with information of the ALMAGAL source sample. These files are used by multiple scripts to iterate over different sources |
+| `data/database` | Contains a csv and excel file with information of the ALMAGAL source sample. These files are used by multiple scripts to iterate over different sources |
+| `data/database/products` | Contains csv files with information about the scientific products (e.g., image information, self-calibration information) |
 | `data/documents` | Contains relevant documents that can be used to gather more information about the scripts and procedures |
 | `data/mpi-runs` | **Main directory** with the scripts to be executed |
 | `software` | Contains the software packages necessary for processing the data |
