@@ -438,13 +438,51 @@ The main script to be executed is ```tarJointDeconvolutionProducts.py```
 
 **Information on the self-calibration products**
 
-The main script to be executed is ```tarJointDeconvolutionProducts.py```
+These files contain information about the rms noise, intensity peak, beam size of the different images produced during the iterative self-calibration process. In the following we list the name of the files and the labels of the header row, which can be used to identify the content included in each file:
+
+- ```7M_almagal_selfcalibrationParameters.csv```
+  - < empty > corresponding to the source ID
+  - Source
+  - 7M_i0_n_BMAJ
+  - 7M_i0_n_BMIN
+  - 7M_i0_n_BPA
+  - 7M_i0_n_PEAK
+  - 7M_i0_n_RMSSTD
+  - 7M_i0_n_RMSMAD
+  - 7M_i0_n_SNRSTD
+  - 7M_i0_n_SNRMAD
+  - 7M_i1_n_BMAJ
+  - 7M_i1_n_BMIN
+  - 7M_i1_n_BPA
+  - 7M_i1_n_PEAK
+  - 7M_i1_n_RMSSTD
+  - 7M_i1_n_RMSMAD
+  - 7M_i1_n_SNRSTD
+  - 7M_i1_n_SNRMAD
+  - 7M_i1_y_BMAJ
+  - 7M_i1_y_BMIN
+  - 7M_i1_y_BPA
+  - 7M_i1_y_PEAK
+  - 7M_i1_y_RMSSTD
+  - 7M_i1_y_RMSMAD
+  - 7M_i1_y_SNRSTD
+  - 7M_i1_y_SNRMAD
+  - ... and it repeats for iterations ```i2```, ```i3``` and ```i4```
+ 
+- ```TM2_almagal_selfcalibrationParameters.csv```
+  - the same as for 7M but for TM2
+
+- ```TM1_almagal_selfcalibrationParameters.csv```
+  - The same as for 7M but for TM1
+
+The columns depict different iterations, with ```i0``` corresponding to no self-calibration attempted, and ```i1``` to ```i4``` the different steps (see publication listed in REFERENCE). The label ```n``` and ```y``` indicates if self-calibration solutions are not or yes applied (this helps to compare e.g., how the noise improves after self-calibration). The main parameters are information on the beam size (```BMAJ```, ```BMIN``` and ```BPA```), information on the peak intensity (```PEAK```), information on the noise measured in two different ways (```RMSSTD``` and ```RMSMAD```), and information on the signal-to-noise ratio (```SNRSTD``` and ```STDMAD```).
 
 **Information on the fraction of bandwidth used for continuum determination**
 
 These files contain information on the fraction of bandwidth used for the continuum determination for each source, individual array and spectral window. In the following we list the name of the file and the labels of the header row, which can be used to identify the content included in each file:
 
 - ```almagal_continuumRanges.csv```
+  - < empty > corresponding to the source ID
   - Source
   - contrange_spw0_7M
   - contrange_spw1_7M
