@@ -150,8 +150,11 @@ Self-calibration
 ------------------------------------
 
 The main goal of the scripts presented in this section is to perform an automatic self-calibration on each source (for each individual array). For this, we follow the standard interferometric guidelines that suggest that for phase-only self-calibration we need to detect the target with a signal-to-noise ratio (SNR) > 3 in a solution time shorter than time for significant phase variations for all baselines to a single antenna. Based on this, the SNR necessary to do self-calibration is defined as:
-$SNR_\mathrm{selfcal} = \sqrt{3x-1}+(1+x)^2$
-where 
+
+$SNR_\mathrm{selfcal} = \frac{I_\mathrm{peak,cont}}{\mathrm{rms}_\mathrm{cont}\times\sqrt{N_\mathrm{ant}-3}\times\sqrt{t_\mathrm{exp}/t_\mathrm{int}}}$
+
+where $I_\mathrm{peak,cont}$ is the peak intensity of the continuum emission, $\mathrm{rms}_\mathrm{cont}$ is the rms noise level of the continuum iamge, $N_\mathrm{ant}$ is the number of antennas available during the observation, $t_\mathrm{exp}$ is the total on-source observing time, and $t_\mathrm{int}$ is the solution time interval, that we equal to the integration time of the observations.
+
 each source (for each individual array) through a series of pipeline and additional CASA tasks in order to produce: (1) images of the continuum and data cubes for each source and array individually, (2) production of a ```cont.dat``` file containing the frequency ranges that can be used for continuum determination, (3) a series of pipeline weblogs and casalogs that contain information that will be used when combining different arrays.
 
 There are three major steps to be executed to achive the above mentioned goals:
