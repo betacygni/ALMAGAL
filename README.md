@@ -136,7 +136,7 @@ After the script has finished, you can **repeat to proceed with the following st
 
 <br/>
 
-**Storage of products for following analysis (e.g., data combination)**
+**Storage of products for following analysis (e.g., self-calibration and data combination)**
 
 The main script to be executed is ```tarPipelineProducts.py```
 
@@ -196,6 +196,10 @@ To proceed with the imaging of the selected source, you just need to execute the
 This will execute the self-calibration for the three arrays individually (i.e., 7M, TM2 and TM1).
 
 <br/>
+
+**Storage of products for following analysis (e.g., data combination)**
+
+The main script to be executed is ```tarSelfCalibrationProducts.py```
 
 
 
