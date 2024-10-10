@@ -443,26 +443,10 @@ The main script to be executed is ```tarJointDeconvolutionProducts.py```
 **Information on the fraction of bandwidth used for continuum determination**
 
 The file ```almagal_continuumRanges.csv``` contains a series of columns that lists the fraction of bandwidth used for the continuum determination for each source, individual array and spectral window. The header of the file contains the following information:
-
-      
-  Required:  
-    - Source  
-    - calibrated split files produced with scriptToSplitSources.py  
-    - master scripts:  
-          REFIND.py  
-          scriptForImaging7M.py  
-          run_mainScriptForImaging7M  
-          mainScriptForImaging7M.sh  
-          scriptForImagingTM2.py  
-          run_mainScriptForImagingTM2  
-          mainScriptForImagingTM2.sh  
-          scriptForImagingTM1.py  
-          run_mainScriptForImagingTM1  
-          mainScriptForImagingTM1.sh  
-          scriptForImagingTM1_serial.py  
-          run_mainScriptForImagingTM1_serial  
-          mainScriptForImagingTM1_serial.sh  
-
+- Source
+- calibrated split files produced with scriptToSplitSources.py
+- master scripts:  
+  
 
 
 - Source
