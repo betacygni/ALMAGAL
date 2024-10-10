@@ -205,7 +205,7 @@ The main script to be executed is ```tarSelfCalibrationProducts.py```
 Data combination
 ------------------------------------
 
-Following self-calibration, the next major goal is to produce combined images (i.e., images in which the data from different array configurations are used together). For this, we follow a CLEANing strategy in which the mask grows gradually to avoid divergence and to ensure recovery and CLEANing of the extended (fainter) emission. Details on the procedure are described in the published paper (see above). The following scripts can be used to image both combined arrays as well as individual arrays.
+Following self-calibration, the next major goal is to produce combined images (i.e., images in which the data from different array configurations are used together). For this, we follow a CLEANing strategy in which the mask grows gradually to avoid divergence and to ensure recovery and CLEANing of the extended (fainter) emission. Details on the procedure are described in the [published paper](https://github.com/betacygni/ALMAGAL#citation-and-publication). The following scripts can be used to image both combined arrays as well as individual arrays.
 
 There are two major steps to be executed to achive the above mentioned goals:
   - Execution of joint-deconvolved imaging procedures
@@ -476,7 +476,7 @@ These files contain information about the rms noise, intensity peak, beam size o
 - ```TM1_almagal_selfcalibrationParameters.csv```
   - The same as for 7M but for TM1
 
-The columns depict different iterations, with ```i0``` corresponding to no self-calibration attempted, and ```i1``` to ```i4``` the different steps (see publication listed [here](https://github.com/betacygni/ALMAGAL#citation-and-publication).). The label ```n``` and ```y``` indicates if self-calibration solutions are not or yes applied (this helps to compare e.g., how the noise improves after self-calibration). The main parameters are information on the beam size (```BMAJ```, ```BMIN``` and ```BPA```), information on the peak intensity (```PEAK```), information on the noise measured in two different ways (```RMSSTD``` and ```RMSMAD```), and information on the signal-to-noise ratio (```SNRSTD``` and ```STDMAD```).
+The columns depict different iterations, with ```i0``` corresponding to no self-calibration attempted, and ```i1``` to ```i4``` the different steps (see publication listed [here](https://github.com/betacygni/ALMAGAL#citation-and-publication)). The label ```n``` and ```y``` indicates if self-calibration solutions are not or yes applied (this helps to compare e.g., how the noise improves after self-calibration). The main parameters are information on the beam size (```BMAJ```, ```BMIN``` and ```BPA```), information on the peak intensity (```PEAK```), information on the noise measured in two different ways (```RMSSTD``` and ```RMSMAD```), and information on the signal-to-noise ratio (```SNRSTD``` and ```STDMAD```).
 
 **Information on the fraction of bandwidth used for continuum determination**
 
