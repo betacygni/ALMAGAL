@@ -304,7 +304,7 @@ def fetchData(my_sourceIDs, my_sourceNAMEs, my_arrays):
                     my_TMPpath, my_TMPdirs, my_TMPfiles = next(os.walk(my_individualPath + my_currentSourceImagePath))
                     
                     if (os.path.isfile(my_individualPath + my_currentSourceImagePath + '/combined-cont-fits.tar') == False):
-                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/largedata/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-cont-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
+                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/data1/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-cont-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
                 
                 # Transfer cube FITS image products from Joint Deconvolution
                 #
@@ -322,7 +322,7 @@ def fetchData(my_sourceIDs, my_sourceNAMEs, my_arrays):
                     my_TMPpath, my_TMPdirs, my_TMPfiles = next(os.walk(my_individualPath + my_currentSourceImagePath))
                     
                     if (os.path.isfile(my_individualPath + my_currentSourceImagePath + '/combined-line-fits.tar') == False):
-                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/largedata/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-line-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
+                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/data1/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-line-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
                 
                 # Transfer extra FITS products from Joint Deconvolution
                 #
@@ -340,7 +340,7 @@ def fetchData(my_sourceIDs, my_sourceNAMEs, my_arrays):
                     my_TMPpath, my_TMPdirs, my_TMPfiles = next(os.walk(my_individualPath + my_currentSourceImagePath))
                     
                     if (os.path.isfile(my_individualPath + my_currentSourceImagePath + '/combined-extra-fits.tar') == False):
-                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/largedata/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-extra-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
+                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/data1/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-extra-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
                 
                 # Transfer extra FITS products from Joint Deconvolution
                 #
@@ -358,7 +358,7 @@ def fetchData(my_sourceIDs, my_sourceNAMEs, my_arrays):
                     my_TMPpath, my_TMPdirs, my_TMPfiles = next(os.walk(my_individualPath + my_currentSourceImagePath))
                     
                     if (os.path.isfile(my_individualPath + my_currentSourceImagePath + '/combined-more-fits.tar') == False):
-                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/largedata/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-more-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
+                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/data1/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-more-fits.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
                 
                 # Transfer auxiliary files from Joint Deconvolution
                 #
@@ -376,7 +376,7 @@ def fetchData(my_sourceIDs, my_sourceNAMEs, my_arrays):
                     my_TMPpath, my_TMPdirs, my_TMPfiles = next(os.walk(my_individualPath + my_currentSourceImagePath))
                     
                     if (os.path.isfile(my_individualPath + my_currentSourceImagePath + '/combined-auxiliary.tar') == False):
-                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/largedata/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-auxiliary.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
+                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/data1/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/combined-auxiliary.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
                 
                 # Transfer spectra extracted towards continuum sources
                 #
@@ -394,7 +394,7 @@ def fetchData(my_sourceIDs, my_sourceNAMEs, my_arrays):
                     my_TMPpath, my_TMPdirs, my_TMPfiles = next(os.walk(my_individualPath + my_currentSourceImagePath))
                     
                     if (os.path.isfile(my_individualPath + my_currentSourceImagePath + '/core-spectra.tar') == False):
-                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/largedata/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/core-spectra.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
+                        os.system('scp -rp -i ~/.ssh/id_ed25519_jsc ' + my_username + '@judac.fz-juelich.de:/p/data1/almagaldata/ALMAGAL/data/2019.1.00195.L/sources' + my_currentSourceImagePath + '/core-spectra.tar ' + my_individualPath + my_currentSourceImagePath + '/.')
 
     print(" ")
     print("::: ALMAGAL command ::: Files transferred to " + my_individualPath)
