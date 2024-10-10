@@ -430,7 +430,34 @@ Order of execution of the scripts
 Information on science data products
 ------------------------------------
 
-The final FITS files of both continuum and cubes will be distributed by the ALMAGAL consortium in the near future. Here we provide some tables with information on the generated products. For example, properties of the produced images (both individual array and combined arrays), information on the self-calibration conditions and properties for the different sources and arrays, and additional potentially useful files. All this information is stored in a series of ```csv``` table files that are available within the ```data/database/products``` directory
+The final FITS files of both continuum and cubes will be distributed by the ALMAGAL consortium in the near future. Here we provide some tables with information on the generated products. For example, properties of the produced images (both individual array and combined arrays), information on the self-calibration conditions and properties for the different sources and arrays, and additional potentially useful files. All this information is stored in a series of ```csv``` table files that are available within the ```data/database/products``` directory. In more detail, we provide:
+
+**Basic information on the produced images**
+
+The main script to be executed is ```tarJointDeconvolutionProducts.py```
+
+**Information on the self-calibration products**
+
+The main script to be executed is ```tarJointDeconvolutionProducts.py```
+
+**Information on the fraction of bandwidth used for continuum determination**
+
+The file ```almagal_continuumRanges.csv``` contains a series of columns that lists the fraction of bandwidth used for the continuum determination for each source, individual array and spectral window. The header of the file contains the following information:
+    - Source
+    - contrange_spw0_7M
+    - contrange_spw1_7M
+    - contrange_spw2_7M
+    - contrange_spw3_7M
+    - contrange_spw0_TM2
+    - contrange_spw1_TM2
+    - contrange_spw2_TM2
+    - contrange_spw3_TM2
+    - contrange_spw0_TM1
+    - contrange_spw1_TM1
+    - contrange_spw2_TM1
+    - contrange_spw3_TM1
+
+
 
 ------------------------------------
 Download and usage of GitHub repository
