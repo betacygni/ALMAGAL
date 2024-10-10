@@ -14,7 +14,7 @@ The paper describes in detail the different steps used for processing the ALMAGA
 <br/>
 <br/>
 
-There are eight major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
+There are nine major sections in this document. They are intended to help you navigate through the different files and to understand the procesures used. The sections include information on:
   - [**Data calibration and preparation**](https://github.com/betacygni/ALMAGAL#data-calibration-and-preparation)
   - [**Pipeline imaging and continuum determination**](https://github.com/betacygni/ALMAGAL#pipeline-imaging-and-continuum-determination)
   - [**Self-calibration**](https://github.com/betacygni/ALMAGAL#self-calibration)
@@ -22,6 +22,7 @@ There are eight major sections in this document. They are intended to help you n
   - [**Transfer of products to your local workstation**](https://github.com/betacygni/ALMAGAL#transfer-of-products-to-your-local-workstation)
   - [**Directory structure**](https://github.com/betacygni/ALMAGAL#directory-structure)
   - [**Order of execution of the scripts**](https://github.com/betacygni/ALMAGAL#order-of-execution-of-the-scripts)
+  - [**Information on science data products**](https://github.com/betacygni/ALMAGAL#information-on-science-data-products)
   - [**Download and usage of GitHub repository**](https://github.com/betacygni/ALMAGAL#download-and-usage-of-github-repository)
   
 
@@ -424,6 +425,12 @@ Order of execution of the scripts
   Required:
     - database.xlsx file containing names and MOUS directory tree
     - pipeline products created by createIndividual_scriptForImaging.py
+
+------------------------------------
+Information on science data products
+------------------------------------
+
+The ALMAGAL GitHub project is structured to enable an easy storage of the data and an effective processing of the data, considering that new data are expected to arrive in the forthcoming months, and that new re-executions of scripts may be necessary. Also, the major structure of the files has been determined in part based on the execution and storage capabilities existing at the Juelich Supercomputer Center, where most of the processing of the data is performed.
 
 
 ------------------------------------
