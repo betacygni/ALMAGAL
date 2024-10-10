@@ -151,7 +151,9 @@ Self-calibration
 
 The main goal of the scripts presented in this section is to perform an automatic self-calibration on each source (for each individual array). For this, we follow the standard interferometric guidelines that suggest that for phase-only self-calibration we need to detect the target with a signal-to-noise ratio (SNR) > 3 in a solution time shorter than time for significant phase variations for all baselines to a single antenna. Based on this, the SNR necessary to do self-calibration is defined as:
 
-$$SNR_\mathrm{selfcal} = \frac{I_\mathrm{peak,cont}}{\mathrm{rms}_\mathrm{cont}\times\sqrt{N_\mathrm{ant}-3}\times\sqrt{t_\mathrm{exp}/t_\mathrm{int}}}$$
+$$SNR_\mathrm{selfcal}$$
+
+
 
 where $I_\mathrm{peak,cont}$ is the peak intensity of the continuum emission, $\mathrm{rms}_\mathrm{cont}$ is the rms noise level of the continuum iamge, $N_\mathrm{ant}$ is the number of antennas available during the observation, $t_\mathrm{exp}$ is the total on-source observing time, and $t_\mathrm{int}$ is the solution time interval, that we equal to the integration time of the observations.
 
